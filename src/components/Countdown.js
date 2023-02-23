@@ -5,7 +5,7 @@ import topBall from "../../public/assets/images/top-ball.svg";
 import bottomBall from "../../public/assets/images/bottom-ball.svg";
 
 const Countdown = () => {
-	const { launch, setLaunch } = useCountdown();
+	const { setLaunch } = useCountdown();
 
 	const [days, setDays] = useState(0);
 	const [hours, setHours] = useState(0);
