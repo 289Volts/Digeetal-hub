@@ -49,7 +49,7 @@ const Countdown = () => {
 			</div>
 			<div className="w-[90%] mx-auto text-center">
 				<h1 className="text-[2.5rem] mb-[1.5rem] z-[1]">Launching Soon</h1>
-				<div className="flex justify-between z-[1] md:w-[45%] mx-auto lg:w-[40%] xl:w-[30%]">
+				<div className="flex justify-between z-[1] md:w-[45%] mx-auto lg:w-[40%] xl:w-[23%]">
 					<div className="flex flex-col gap-2 items-center">
 						<div className="backdrop-blur-[10px] bg-white/[0.2] p-4 w-full rounded-[3px] flex items-center justify-center">
 							<span className="text-[2rem]">{days}</span>
