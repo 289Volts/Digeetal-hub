@@ -42,10 +42,10 @@ const Countdown = () => {
 	return (
 		<div className="h-screen flex flex-col items-center justify-center bg-body text-white relative overflow-hidden">
 			<div className="">
-				<Image src={topBall} alt="" className="w-[45%] md:w-[20%] absolute z-[1] top-0 left-0" />
+				<Image src={topBall} alt="" priority className="w-[45%] md:w-[20%] absolute z-[1] top-0 left-0" />
 			</div>
 			<div className="">
-				<Image src={bottomBall} alt="" className="w-[45%] md:w-[20%] absolute z-[1] bottom-0 right-0" />
+				<Image src={bottomBall} alt="" priority className="w-[45%] md:w-[20%] absolute z-[1] bottom-0 right-0" />
 			</div>
 			<div className="w-[90%] mx-auto text-center">
 				<h1 className="text-[2.5rem] mb-[1.5rem] z-[1]">Launching Soon</h1>
