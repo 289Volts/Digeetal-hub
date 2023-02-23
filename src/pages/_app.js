@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import CountDownContext from "@/context/CountdownContext";
 import "@/styles/globals.css";
 import { DM_Sans, Inter } from "@next/font/google";
 import { Fragment } from "react";
@@ -12,7 +13,9 @@ export default function App({ Component, pageProps }) {
 	return (
 		<Fragment>
 			<Layout className={dm.className}>
-				<Component {...pageProps} />
+				<CountDownContext>
+					<Component {...pageProps} />
+				</CountDownContext>
 			</Layout>
 		</Fragment>
 	);
