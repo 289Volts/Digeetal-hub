@@ -75,8 +75,8 @@ const Countdown = () => {
 						<span className="uppercase text-sm md:text-base lg:text-[1.5rem]">Seconds</span>
 					</div>
 				</div>
-				<p className="mt-[3rem] md:text-[1.2rem] lg:text-[1.4rem]">
-					We are working towards bringing you <span className="before:w-full before:h-full before:bg-red">excellent service</span>
+				<p className="mt-[3rem] md:text-[1.2rem] lg:text-[1.4rem] relative z-10">
+					We are working towards bringing you excellent service
 				</p>
 			</div>
 		</div>
