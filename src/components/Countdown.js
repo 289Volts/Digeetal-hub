@@ -48,34 +48,36 @@ const Countdown = () => {
 				<Image src={bottomBall} alt="" priority className="w-[45%] md:w-[20%] absolute z-[1] bottom-0 right-0" />
 			</div>
 			<div className="w-[90%] mx-auto text-center">
-				<h1 className="text-[2.5rem] mb-[1.5rem] z-[1]">Launching Soon</h1>
-				<div className="flex justify-between z-[1] md:w-[45%] mx-auto lg:w-[40%] xl:w-[23%]">
+				<h1 className="text-[2.5rem] mb-[1.5rem] z-[1] lg:text-[3.5rem]">Launching Soon</h1>
+				<div className="grid grid-cols-4 gap-4 md:gap-6 z-[1] md:w-[50%] mx-auto lg:w-[70%] xl:w-[40%]">
 					<div className="flex flex-col gap-2 items-center">
 						<div className="backdrop-blur-[10px] bg-white/[0.2] p-4 w-full rounded-[3px] flex items-center justify-center">
-							<span className="text-[2rem]">{days}</span>
+							<span className="text-[2rem] lg:text-[4rem]">{days}</span>
 						</div>
-						<span className="uppercase text-sm md:text-base">Days</span>
+						<span className="uppercase text-sm md:text-base lg:text-[1.5rem]">Days</span>
 					</div>
 					<div className="flex flex-col gap-2 items-center">
 						<div className="backdrop-blur-[10px] bg-white/[0.2] p-4 w-full rounded-[3px] flex items-center justify-center">
-							<span className="text-[2rem]">{hours}</span>
+							<span className="text-[2rem] lg:text-[4rem]">{hours}</span>
 						</div>
-						<span className="uppercase text-sm md:text-base">Hours</span>
+						<span className="uppercase text-sm md:text-base lg:text-[1.5rem]">Hours</span>
 					</div>
 					<div className="flex flex-col gap-2 items-center">
 						<div className="backdrop-blur-[10px] bg-white/[0.2] p-4 w-full rounded-[3px] flex items-center justify-center">
-							<span className="text-[2rem]">{minutes}</span>
+							<span className="text-[2rem] lg:text-[4rem]">{minutes}</span>
 						</div>
-						<span className="uppercase text-sm md:text-base">Minutes</span>
+						<span className="uppercase text-sm md:text-base lg:text-[1.5rem]">Minutes</span>
 					</div>
 					<div className="flex flex-col gap-2 items-center">
 						<div className="backdrop-blur-[10px] bg-white/[0.2] p-4 w-full rounded-[3px] flex items-center justify-center">
-							<span className="text-[2rem]">{seconds}</span>
+							<span className="text-[2rem] lg:text-[4rem]">{seconds}</span>
 						</div>
-						<span className="uppercase text-sm md:text-base">Seconds</span>
+						<span className="uppercase text-sm md:text-base lg:text-[1.5rem]">Seconds</span>
 					</div>
 				</div>
-				<p className="mt-[2rem]">We are working on bringing you excellent service</p>
+				<p className="mt-[3rem] md:text-[1.2rem] lg:text-[1.4rem]">
+					We are working towards bringing you <span className="before:w-full before:h-full before:bg-red">excellent service</span>
+				</p>
 			</div>
 		</div>
 	);
