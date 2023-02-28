@@ -26,32 +26,32 @@ const Footer = ({ className }) => {
 					<nav className="text-black50">
 						<ul className="flex flex-col gap-3 xs:text-xs small:text-sm font-bold sm:text-base">
 							<li className="">
-								<Link href="" className="">
+								<Link href="/about/#ui-ux" className="">
 									UI/UX Design
 								</Link>
 							</li>
 							<li className="">
-								<Link href="" className="">
+								<Link href="/about/#content-writing" className="">
 									Content Writing
 								</Link>
 							</li>
 							<li className="">
-								<Link href="" className="">
+								<Link href="/about/#graphic-design" className="">
 									Graphic Design
 								</Link>
 							</li>
 							<li className="">
-								<Link href="" className="">
+								<Link href="/about/#copywriting" className="">
 									Copywriting
 								</Link>
 							</li>
 							<li className="">
-								<Link href="" className="">
+								<Link href="/about/#web-development" className="">
 									Web & Mobile App Development
 								</Link>
 							</li>
 							<li className="">
-								<Link href="" className="">
+								<Link href="/about/#smm" className="">
 									Social Media Management
 								</Link>
 							</li>

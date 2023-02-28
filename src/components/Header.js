@@ -6,6 +6,7 @@ import mobileLogo from "../../public/assets/images/mobile-header-logo.svg";
 import { useRouter } from "next/router";
 import { motion, useCycle } from "framer-motion";
 import Hamburger from "./Hamburger";
+import MyLink from "./MyLink";
 
 const Header = ({ className }) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -55,7 +56,7 @@ const Header = ({ className }) => {
 				<nav className="">
 					<motion.ul
 						variants={childVariants}
-						className="flex lg:grid grid-cols-[3.75rem_4.8rem_2.625rem_5.8rem_1fr] gap-7 lg:gap-[3rem] items-center"
+						className="flex lg:grid grid-cols-[3.75rem_4.8rem_6.5rem_5.8rem_1fr] gap-7 lg:gap-[2.5rem] items-center"
 					>
 						<motion.li initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="">
 							<Link className={`${pathname === "/" ? "text-primary500 font-bold" : ""}`} href="/">
@@ -78,8 +79,8 @@ const Header = ({ className }) => {
 							transition={{ delay: 1.5, duration: 1 }}
 							className=""
 						>
-							<Link className={`${pathname === "/about/#faqs" ? "text-primary500 font-bold" : ""}`} href="/about/#faqs">
-								FAQs
+							<Link className={`${pathname === "/services" ? "text-primary500 font-bold" : ""}`} href="/services">
+								Our Services
 							</Link>
 						</motion.li>
 						<motion.li
@@ -98,12 +99,10 @@ const Header = ({ className }) => {
 							transition={{ delay: 2.5, duration: 1 }}
 							className=""
 						>
-							<Link
-								className={`text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full`}
-								href=""
-							>
-								Start a Project
-							</Link>
+							<MyLink
+								value="Start a Project"
+								classes="text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full"
+							/>
 						</motion.li>
 					</motion.ul>
 				</nav>
@@ -133,7 +132,7 @@ const Header = ({ className }) => {
 							</Link>
 						</l1>
 						<l1 className="">
-							<Link className={`${pathname === "/#faqs" ? "text-primary500 font-bold" : ""}`} href="/about/#faqs">
+							<Link className={`${pathname === "/services" ? "text-primary500 font-bold" : ""}`} href="/services">
 								FAQs
 							</Link>
 						</l1>
@@ -143,12 +142,10 @@ const Header = ({ className }) => {
 							</Link>
 						</l1>
 						<l1 className="">
-							<Link
-								className={`text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full`}
-								href=""
-							>
-								Start a Project
-							</Link>
+                        <MyLink
+								value="Start a Project"
+								classes="text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full"
+							/>
 						</l1>
 					</ul>
 				</motion.nav>

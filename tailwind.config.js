@@ -6,6 +6,7 @@ module.exports = {
 			screens: {
 				xs: "280px",
 				small: "320px",
+				normal: '375px',
 				medium: "520px",
 			},
 			colors: {
