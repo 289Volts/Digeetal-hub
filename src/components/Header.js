@@ -98,7 +98,10 @@ const Header = ({ className }) => {
 							transition={{ delay: 2.5, duration: 1 }}
 							className=""
 						>
-							<Link className={`text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full`} href="">
+							<Link
+								className={`text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full`}
+								href=""
+							>
 								Start a Project
 							</Link>
 						</motion.li>
@@ -120,27 +123,30 @@ const Header = ({ className }) => {
 				>
 					<ul className="flex flex-col items-center gap-8 text-center justify-center h-full">
 						<l1 className="">
-							<Link className={`${pathname === "/" ? "text-primary500 font-bold" : ""}`} href="">
+							<Link className={`${pathname === "/" ? "text-primary500 font-bold" : ""}`} href="/">
 								Home
 							</Link>
 						</l1>
 						<l1 className="">
-							<Link className={`${pathname === "/about" ? "text-primary500 font-bold" : ""}`} href="">
+							<Link className={`${pathname === "/about" ? "text-primary500 font-bold" : ""}`} href="/about">
 								About Us
 							</Link>
 						</l1>
 						<l1 className="">
-							<Link className={`${pathname === "/#faqs" ? "text-primary500 font-bold" : ""}`} href="">
+							<Link className={`${pathname === "/#faqs" ? "text-primary500 font-bold" : ""}`} href="/about/#faqs">
 								FAQs
 							</Link>
 						</l1>
 						<l1 className="">
-							<Link className={`${pathname === "/contact" ? "text-primary500 font-bold" : ""}`} href="">
+							<Link className={`${pathname === "/contact-us" ? "text-primary500 font-bold" : ""}`} href="/contact-us">
 								Contact Us
 							</Link>
 						</l1>
 						<l1 className="">
-							<Link className={`text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full`} href="">
+							<Link
+								className={`text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full`}
+								href=""
+							>
 								Start a Project
 							</Link>
 						</l1>

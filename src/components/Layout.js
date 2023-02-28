@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Footer from "./Footer";
 import Header from "./Header";
 
 const Layout = ({ children, className }) => {
@@ -6,6 +7,7 @@ const Layout = ({ children, className }) => {
 		<Fragment>
 			<Header className={className} />
 			<main className={className}>{children}</main>
+			<Footer className={className} />
 		</Fragment>
 	);
 };
