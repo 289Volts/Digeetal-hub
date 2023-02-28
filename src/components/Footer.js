@@ -13,8 +13,8 @@ const Footer = ({ className }) => {
 	const currentYear = new Date().getFullYear();
 	return (
 		<footer className={`${className} bg-primary500 w-full text-whiteText pt-[2.5rem] pb-4`}>
-			<div className="w-[90%] mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:flex lg:flex-wrap justify-between lg:w-[80%]">
-				<div className="space-y-6 lg:w-[33%] xl:w-[25%]">
+			<div className="w-[90%] mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:flex lg:flex-wrap justify-between lg:gap-4 lg:w-[80%]">
+				<div className="space-y-6 lg:w-[33%] xl:w-[23%]">
 					<Image src={footerLogo} className="" alt="footer logo" />
 					<p className="xs:text-xs small:text-sm xs:w-[95%] small:w-[65%] font-bold sm:w-[75%] sm:text-base lg:w-[100%]">
 						We're a team of young, professional and creative experts. Our goal is to deliver top-quality work on time
@@ -58,7 +58,7 @@ const Footer = ({ className }) => {
 						</ul>
 					</nav>
 				</div>
-				<div className="mt-6 mb-4 sm:mt-0 lg:w-[30%] xl:w-[15%]">
+				<div className="mt-6 mb-4 sm:mt-0 lg:w-[17%] xl:w-[123]">
 					<h2 className="text-xs small:text-xl mb-4 font-bold sm:text-2xl">Quick Links</h2>
 					<nav className="text-black50">
 						<ul className="flex flex-col gap-3 xs:text-xs small:text-sm font-bold sm:text-base">
