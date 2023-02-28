@@ -31,7 +31,7 @@ export default function Home() {
 				<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 			</Head>
 			<main className="">
-				{/* <Countdown /> */}
+				<Countdown />
 				{/* <Homepage /> */}
 			</main>
 		</>
