@@ -119,7 +119,7 @@ const Header = ({ className }) => {
 					initial={{ y: "-100vh" }}
 					animate={{ y: isOpen ? "0" : "-100vh" }}
 					transition={{ duration: 0.6 }}
-					className="bg-primary50 absolute top-0 left-0 right-0 w-full h-[53vh] pt-9 small:w-[60%] small:ml-auto"
+					className="bg-primary50 absolute top-0 left-0 right-0 w-full h-[53vh] pt-9 medium:w-[60%] medium:ml-auto"
 				>
 					<ul className="flex flex-col items-center gap-8 text-center justify-center h-full">
 						<l1 className="">
