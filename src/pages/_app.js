@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import CountDownContext from "@/context/CountdownContext";
 import "@/styles/globals.css";
-import { DM_Sans, Inter } from "@next/font/google";
+import { DM_Sans } from "@next/font/google";
 import { Fragment } from "react";
 
 const dm = DM_Sans({

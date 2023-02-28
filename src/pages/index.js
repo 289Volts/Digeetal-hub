@@ -1,4 +1,5 @@
 import Countdown from "@/components/Countdown";
+import Homepage from "@/components/Homepage";
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
@@ -30,7 +31,8 @@ export default function Home() {
 				<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 			</Head>
 			<main className="">
-				<Countdown />
+				{/* <Countdown /> */}
+				{/* <Homepage /> */}
 			</main>
 		</>
 	);
