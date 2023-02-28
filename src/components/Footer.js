@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import footerLogo from "../../public/assets/images/mobile-footer-logo.svg";
-import Copyright from "./assets/Copyright";
 import Email from "./assets/Email";
 import Instagram from "./assets/Instagram";
 import LinkedIn from "./assets/LinkedIn";
@@ -14,36 +13,26 @@ const Footer = ({ className }) => {
 	const currentYear = new Date().getFullYear();
 	return (
 		<footer className={`${className} bg-primary500 w-full text-whiteText pt-[2.5rem] pb-4`}>
-			<div className="w-[90%] mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
-				<div className="space-y-6">
+			<div className="w-[90%] mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:flex lg:flex-wrap justify-between lg:w-[80%]">
+				<div className="space-y-6 lg:w-[33%] xl:w-[25%]">
 					<Image src={footerLogo} className="" alt="footer logo" />
-					<p className="xs:text-xs small:text-sm xs:w-[95%] small:w-[65%] font-bold sm:w-[75%] sm:text-base">
+					<p className="xs:text-xs small:text-sm xs:w-[95%] small:w-[65%] font-bold sm:w-[75%] sm:text-base lg:w-[100%]">
 						We're a team of young, professional and creative experts. Our goal is to deliver top-quality work on time
 						and within budget, while providing exceptional customer service.
 					</p>
 				</div>
-				<div className="mt-6 mb-4 sm:mt-0">
+				<div className="mt-6 mb-4 sm:my-0 lg:w-[33%] xl:w-[20%]">
 					<h2 className="text-xl mb-4 font-bold sm:text-2xl">Services</h2>
 					<nav className="text-black50">
 						<ul className="flex flex-col gap-3 xs:text-xs small:text-sm font-bold sm:text-base">
 							<li className="">
 								<Link href="" className="">
-									Web & Mobile App Development
-								</Link>
-							</li>
-							<li className="">
-								<Link href="" className="">
 									UI/UX Design
 								</Link>
 							</li>
 							<li className="">
 								<Link href="" className="">
 									Content Writing
-								</Link>
-							</li>
-							<li className="">
-								<Link href="" className="">
-									Social Media Management
 								</Link>
 							</li>
 							<li className="">
@@ -56,59 +45,59 @@ const Footer = ({ className }) => {
 									Copywriting
 								</Link>
 							</li>
+							<li className="">
+								<Link href="" className="">
+									Web & Mobile App Development
+								</Link>
+							</li>
+							<li className="">
+								<Link href="" className="">
+									Social Media Management
+								</Link>
+							</li>
 						</ul>
 					</nav>
 				</div>
-				<div className="mt-6 mb-4 sm:mt-0">
+				<div className="mt-6 mb-4 sm:mt-0 lg:w-[30%] xl:w-[15%]">
 					<h2 className="text-xs small:text-xl mb-4 font-bold sm:text-2xl">Quick Links</h2>
 					<nav className="text-black50">
 						<ul className="flex flex-col gap-3 xs:text-xs small:text-sm font-bold sm:text-base">
 							<li className="">
 								<Link href="" className="">
-									Web & Mobile App Development
+									About Us
 								</Link>
 							</li>
 							<li className="">
 								<Link href="" className="">
-									UI/UX Design
+									Our Clients
 								</Link>
 							</li>
 							<li className="">
 								<Link href="" className="">
-									Content Writing
+									Testimonials
 								</Link>
 							</li>
 							<li className="">
 								<Link href="" className="">
-									Social Media Management
-								</Link>
-							</li>
-							<li className="">
-								<Link href="" className="">
-									Graphic Design
-								</Link>
-							</li>
-							<li className="">
-								<Link href="" className="">
-									Copywriting
+									FAQs
 								</Link>
 							</li>
 						</ul>
 					</nav>
 				</div>
-				<div className="">
+				<div className=" xl:w-[18%]">
 					<div className="mb-4">
 						<h2 className="text-xs small:text-xl mb-4 font-bold sm:text-2xl">Contact</h2>
-						<div className="text-black50 xs:text-xs small:text-sm space-y-3 lg:flex sm:text-base">
-							<Link href="" className="flex items-center gap-3 font-bold">
+						<div className="text-black50 xs:text-xs small:text-sm space-y-3 lg:flex sm:text-base lg:space-y-0 items-center gap-4 xl:flex-col xl:items-start">
+							<Link href="" className="flex items-center gap-3 font-bold lg:gap-1">
 								<Location className="w-[19px] sm:w-[24px] aspect-square" viewBox="0 0 24 24" />
 								<span className="">Lagos, Nigeria</span>
 							</Link>
-							<Link href="" className="flex items-center gap-3 font-bold">
+							<Link href="" className="flex items-center gap-3 font-bold lg:gap-1">
 								<Email className="w-[19px] sm:w-[24px] aspect-square" viewBox="0 0 24 24" />
 								<span className="">info@digeetalhub.com</span>
 							</Link>
-							<Link href="" className="flex items-center gap-3 font-bold">
+							<Link href="" className="flex items-center gap-3 font-bold lg:gap-1">
 								<Phone className="w-[19px] sm:w-[24px] aspect-square" viewBox="0 0 24 24" />
 								<span className="">+2349035937893</span>
 							</Link>
