@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import CountDownContext from "@/context/CountdownContext";
 import "@/styles/globals.css";
 import { DM_Sans } from "@next/font/google";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 
 const dm = DM_Sans({
 	weight: ["400", "500", "700"],
@@ -10,13 +10,14 @@ const dm = DM_Sans({
 });
 
 export default function App({ Component, pageProps }) {
+	
 	return (
 		<Fragment>
-			{/* <Layout className={dm.className}> */}
-				<CountDownContext>
+			<Layout className={dm.className}>
+			<CountDownContext>
 					<Component {...pageProps} />
-				</CountDownContext>
-			{/* </Layout> */}
+			</CountDownContext>
+			</Layout>
 		</Fragment>
 	);
 }
