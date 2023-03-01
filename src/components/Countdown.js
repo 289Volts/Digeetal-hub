@@ -40,13 +40,11 @@ const Countdown = () => {
 	}, []);
 
 	return (
-		<div className="absolute inset-0 flex flex-col items-center justify-center bg-body text-white w-full overflow-y-hidden  h-screen">
-			<div className="overflow-hidden">
-				<Image src={topBall} alt="" priority className="w-[45%] md:w-[20%] absolute z-[1] top-0 left-0" />
-			</div>
-			<div className="overflow-hidden">
-				<Image src={bottomBall} alt="" priority className="w-[45%] md:w-[20%] absolute z-[1] bottom-0 right-0" />
-			</div>
+		<div className="h-[100dvh] inset-0 flex flex-col items-center justify-center bg-body text-white w-full overflow-y-hidden">
+			<Image src={topBall} alt="" priority className="w-[45%] md:w-[20%] absolute z-[1] top-0 left-0" />
+
+			<Image src={bottomBall} alt="" priority className="w-[45%] md:w-[20%] absolute z-[1] bottom-0 right-0" />
+
 			<div className="w-[90%] mx-auto text-center relative z-10">
 				<h1 className="text-[2.5rem] mb-[1.5rem] z-[1] lg:text-[3.5rem]">Launching Soon!!</h1>
 				<div className="grid grid-cols-4 gap-4 md:gap-5 lg:gap-6 z-[1] sm:w-[53%] mx-auto lg:w-[55%] xl:w-[40%]">

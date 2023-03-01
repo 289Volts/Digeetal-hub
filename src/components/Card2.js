@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 const Card2 = ({containerClass, numberClass, titleClass, descriptionClass, number, title, description, image, alt }) => {
 	return (

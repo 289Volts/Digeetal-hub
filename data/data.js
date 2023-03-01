@@ -1,6 +1,6 @@
-import people from "./public/assets/images/people.svg";
-import calendar from "./public/assets/images/calendar.svg";
-import folder from "./public/assets/images/folder.svg";
+import people from "../public/assets/images/people.svg";
+import calendar from "../public/assets/images/calendar.svg";
+import folder from "../public/assets/images/folder.svg";
 
 export const services = [
 	{
@@ -83,7 +83,7 @@ export const whyUs = [
 			"Following the completion of all inquiries, the next step is to hold a virtual meeting to further plan the project.",
 	},
 	{
-		id: "3.",
+		id: 3,
 		image: calendar,
 		title: "We Deliver Right On Time",
 		description: "At this point, we will send all project-related documents as well as an invoice for payment.",

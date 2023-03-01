@@ -11,7 +11,7 @@ const homePath = `${pathname} === "/"`
 	return (
 		<Fragment>
 			{allowedPath && !homePath ? <Header className={className} /> : null}
-			<main className={className}>{children}</main>
+			<main className={`${className}`}>{children}</main>
 			{allowedPath && !homePath ? <Footer className={className} /> : null}
 		</Fragment>
 	);
