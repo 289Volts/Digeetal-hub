@@ -4,12 +4,15 @@ import MyLink from "./MyLink";
 import heroImgMobile from "../../public/assets/images/hero-img-mobile.svg";
 import whoWeAre from "../../public/assets/images/who-we-are.svg";
 import fair from "../../public/assets/images/fair.png";
+import workProcessSm from "../../public/assets/images/work-process-mobile.svg";
 import Card from "./Card";
-import cardData from "../../data";
+import Card2 from "./Card2";
+import { services, whyUs, workProcess } from "../../data";
+import Layout from "./Layout";
 
 const Homepage = () => {
 	return (
-		<div className=" overflow-hidden">
+		<Layout  className={dm.className}><div className=" overflow-hidden">
 			<section className="pt-6 pb-[2.5rem]">
 				<div className="w-[90%] mx-auto">
 					<Image src={fair} alt="" className="" />
@@ -32,7 +35,7 @@ const Homepage = () => {
 					</div>
 				</div>
 			</section>
-			<section className="bg-primary50 py-8">
+			<section className="bg-primary50 py-[2.5rem]">
 				<div className="w-[90%] mx-auto">
 					<Image src={whoWeAre} alt="" />
 					<div className="space-y-2 mt-8">
@@ -64,14 +67,56 @@ const Homepage = () => {
 							We offer range of services to suite your business needs
 						</p>
 					</div>
-          <div className="flex flex-col gap-8 mt-8">
-            {cardData.map(({id, title, description}) => (
-              <Card key={id} title={title} description={description}/>
-            ))}
+					<div className="flex flex-col gap-8 mt-8">
+						{services.map(({ id, title, description }) => (
+							<Card key={id} title={title} description={description} />
+						))}
 					</div>
 				</div>
 			</section>
-		</div>
+			<section className="py-[2.5rem] bg-primary50">
+				<div className="w-[90%] mx-auto">
+					<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900 text-center">
+						Learn About Our Work Process
+					</h2>
+					<Image src={workProcessSm} alt="" className="w-full mt-8" />
+					<div className="mt-[2.5rem] space-y-8">
+						{workProcess.map(({ id, title, description }) => (
+							<Card2
+								key={id}
+								numberClass="text-primary500 font-bold text-xl normal:text-[2rem] mb-2"
+								titleClass="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900"
+								descriptionClass="text-black400 text-sm normal:text-base mt-[0.75rem]"
+								number={id}
+								title={title}
+								description={description}
+							/>
+						))}
+					</div>
+				</div>
+			</section>
+			<section className="py-[2.5rem]">
+				<div className="w-[90%] mx-auto">
+					<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900 text-center">
+						Why Choose Us
+					</h2>
+					<div className="mt-8">
+						{whyUs.map(({ id, title, description, containerClass, image, alt }) => (
+							<Card2
+							key={id}
+							containerClass="text-center"
+								titleClass="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900 mt-6"
+								descriptionClass="text-black400 text-sm mt-4"
+								title={title}
+								description={description}
+								image={image}
+							/>
+						))}
+					</div>
+				</div>
+			</section>
+		</div></Layout>
+		
 	);
 };
 

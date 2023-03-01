@@ -12,11 +12,11 @@ const dm = DM_Sans({
 export default function App({ Component, pageProps }) {
 	return (
 		<Fragment>
-			<Layout className={dm.className}>
+			{/* <Layout className={dm.className}> */}
 				<CountDownContext>
 					<Component {...pageProps} />
 				</CountDownContext>
-			</Layout>
+			{/* </Layout> */}
 		</Fragment>
 	);
 }

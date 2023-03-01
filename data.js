@@ -1,4 +1,8 @@
-const cardData = [
+import people from "./public/assets/images/people.svg";
+import calendar from "./public/assets/images/calendar.svg";
+import folder from "./public/assets/images/folder.svg";
+
+export const services = [
 	{
 		id: 1,
 		title: "Web & Mobile App Development",
@@ -37,4 +41,51 @@ const cardData = [
 	},
 ];
 
-export default cardData;
+export const workProcess = [
+	{
+		id: "1.",
+		title: "Project Enquiry",
+		description:
+			"The first point of contact is for inquiries and technical specifications. At this stage, we learn about your project and how we can assist you in achieving your goals.",
+	},
+	{
+		id: "2.",
+		title: "Virtual Meeting",
+		description:
+			"Following the completion of all inquiries, the next step is to hold a virtual meeting to further plan the project.",
+	},
+	{
+		id: "3.",
+		title: "Project Proposal",
+		description: "At this point, we will send all project-related documents as well as an invoice for payment.",
+	},
+	{
+		id: "4.",
+		title: "Project Execution",
+		description:
+			"Following the signing of the project proposal and payment, execution will begin immediately in accordance with the proposal.",
+	},
+];
+
+export const whyUs = [
+	{
+		id: 1,
+		image: people,
+		title: "We Prioritize Your  Success",
+		description:
+			"The first point of contact is for inquiries and technical specifications. At this stage, we learn about your project and how we can assist you in achieving your goals.",
+	},
+	{
+		id: 2,
+		image: folder,
+		title: "Every Project is User-Centered",
+		description:
+			"Following the completion of all inquiries, the next step is to hold a virtual meeting to further plan the project.",
+	},
+	{
+		id: "3.",
+		image: calendar,
+		title: "We Deliver Right On Time",
+		description: "At this point, we will send all project-related documents as well as an invoice for payment.",
+	},
+];
