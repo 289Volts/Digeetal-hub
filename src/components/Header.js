@@ -43,7 +43,7 @@ const Header = ({ className }) => {
 
 	const { pathname } = useRouter();
 	return (
-		<header className={`${className} relative bg-whiteText`}>
+		<header className={`${className} bg-whiteText sticky top-0 left-0 z-[50]`}>
 			<motion.div
 				variants={variants}
 				initial="hidden"

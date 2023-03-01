@@ -12,8 +12,10 @@ module.exports = {
 			colors: {
 				primary500: "#2385D5",
 				primary50: "#E9F3FB",
-				black500: "#33313B",
 				black50: "#EBEAEB",
+				black400: "#5C5A62",
+				black500: "#33313B",
+				black900: "#151519",
 				whiteText: "#FFFCFC",
 			},
 			backgroundImage: {
