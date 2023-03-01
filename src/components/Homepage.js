@@ -9,7 +9,7 @@ import cardData from "../../data";
 
 const Homepage = () => {
 	return (
-		<div>
+		<div className=" overflow-hidden">
 			<section className="pt-6 pb-[2.5rem]">
 				<div className="w-[90%] mx-auto">
 					<Image src={fair} alt="" className="" />
@@ -54,7 +54,7 @@ const Homepage = () => {
 					/>
 				</div>
 			</section>
-			<section className="py-[2.5rem]">
+			<section className="py-[2.5rem] overflow-hidden">
 				<div className="w-[90%] mx-auto">
 					<div className="">
 						<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900 text-center">

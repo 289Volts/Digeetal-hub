@@ -40,7 +40,7 @@ const Countdown = () => {
 	}, []);
 
 	return (
-		<div className="absolute inset-0 flex flex-col items-center justify-center bg-body text-white w-full overflow-y-hidden">
+		<div className="absolute inset-0 flex flex-col items-center justify-center bg-body text-white w-full overflow-y-hidden z-[99]">
 			<div className="overflow-hidden">
 				<Image src={topBall} alt="" priority className="w-[45%] md:w-[20%] absolute z-[1] top-0 left-0" />
 			</div>
