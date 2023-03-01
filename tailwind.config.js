@@ -24,6 +24,9 @@ module.exports = {
 				topBall: "url('/assets/images/top-ball.svg')",
 				bottomBall: "url('/assets/images/bottom-ball.svg')",
 			},
+			boxShadow: {
+				cardShadow: "0px 147px 59px rgba(27, 26, 26, 0.01), 0px 83px 50px rgba(27, 26, 26, 0.05), 0px 37px 37px rgba(27, 26, 26, 0.09), 0px 9px 20px rgba(27, 26, 26, 0.1), 0px 0px 0px rgba(27, 26, 26, 0.1)"
+			}
 		},
 	},
 	plugins: [],

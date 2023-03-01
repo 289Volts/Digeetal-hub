@@ -102,6 +102,7 @@ const Header = ({ className }) => {
 							<MyLink
 								value="Start a Project"
 								classes="text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full"
+								dest="/contact-us"
 							/>
 						</motion.li>
 					</motion.ul>
@@ -142,9 +143,10 @@ const Header = ({ className }) => {
 							</Link>
 						</l1>
 						<l1 className="">
-                        <MyLink
+							<MyLink
 								value="Start a Project"
 								classes="text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full"
+								dest="/contact-us"
 							/>
 						</l1>
 					</ul>
