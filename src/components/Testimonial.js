@@ -13,7 +13,7 @@ const Testimonial = ({ image, alt, comment }) => {
 					{firstRow.map(({ image, id, title, review, subtitle }) => (
 						<div
 							key={id}
-							className=" flex w-[550px] gap-4 items-center border-primary500 rounded-full border pr-[3.5rem] ml-6"
+							className=" flex w-[610px] gap-4 items-center border-primary500 rounded-full border pr-[3.5rem] ml-6"
 						>
 							<Image src={image} alt={alt} className="w-full" />
 							<div className="flex flex-col gap-3">

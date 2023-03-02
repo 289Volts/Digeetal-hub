@@ -11,6 +11,7 @@ import { services, whyUs, workProcess } from "../../data/data";
 import { partners } from "../../data/partners";
 import Partners from "./Partners";
 import Testimonial from "./Testimonial";
+import BlurSkeleton from "./BlurSkeleton";
 
 const Homepage = () => {
 	return (
@@ -39,7 +40,9 @@ const Homepage = () => {
 			</section>
 			<section className="bg-primary50 py-[2.5rem]">
 				<div className="w-[90%] mx-auto">
+					{/* <BlurSkeleton src={whoWeAre} alt="" /> */}
 					<Image src={whoWeAre} alt="" className="w-full" />
+					{/* <Image src="/assets/images/who-we-are.svg" width={300} height={300} alt="" className="w-full" /> */}
 					<div className="space-y-2 mt-8">
 						<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900">
 							Who We Are

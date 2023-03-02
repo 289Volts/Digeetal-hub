@@ -2,7 +2,7 @@ import React from "react";
 import MyLink from "./MyLink";
 import { motion as m } from "framer-motion";
 
-const Card = ({ classes, title, description }) => {
+const Card = ({ title, description }) => {
 	return (
 		<m.div
 			initial={{ opacity: 0, x: -100 }}
@@ -10,7 +10,7 @@ const Card = ({ classes, title, description }) => {
 			viewport={{ once: true, threshold: 5 }}
 			whileHover={{ scale: 1.05 }}
 			whileTap={{ scale: 0.95 }}
-			transition={{ duration: 0.8 }}
+			transition={{ duration: 0.8, ease: "easeInOut" }}
 			className="shadow-cardShadow bg-white text-center py-[2.1875rem] px-5 rounded-[20px]"
 		>
 			<h3 className="text-black500 text-xl font-bold mb-3">{title}</h3>
