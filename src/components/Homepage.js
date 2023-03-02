@@ -17,23 +17,23 @@ const Homepage = () => {
 	return (
 		<div className="">
 			<section className="pt-6 pb-[2.5rem]">
-				<div className="w-[90%] mx-auto">
+				<div className="w-[90%] mx-auto md:flex flex-row-reverse">
 					<Image src={fair} alt="" className="w-full" />
 					<div className="">
-						<div className="text-center space-y-2 mt-6">
+						<div className="text-center mt-6">
 							<h1 className="font-bold text-black900 text-lg small:text-[1.25rem] leading-[1.26] normal:text-[1.7rem] md:text-[3rem]">
 								Elevate Your Business with Custom Web Design & Development Solutions
 							</h1>
-							<p className="text-xs small:text-sm normal:text-base text-black500">
+							<p className="text-xs small:text-sm normal:text-base text-black500 mt-2">
 								Revolutionize Your Online Presence with Cutting-Edge Web Design and Development. Trust Our Expert Team
 								to Deliver Results.
 							</p>
-						</div>
-						<div className="mt-4">
-							<MyLink
-								value="Learn More"
-								classes="text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full w-[fit-content] mx-auto"
-							/>
+							<div className="mt-4">
+								<MyLink
+									value="Learn More"
+									classes="text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full w-[fit-content] mx-auto"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -47,7 +47,7 @@ const Homepage = () => {
 						<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900">
 							Who We Are
 						</h2>
-						<p className="text-black400 text-xs small:text-sm leading-[1.4] normal:text-base">
+						<p className="text-black900 text-xs small:text-sm leading-[1.4] normal:text-base">
 							Welcome to Digeetal Hub, where we specialize in web design and development solutions to help businesses
 							stand out online. Our team of experts offers custom web design, e-commerce solutions, responsive design,
 							and SEO optimization, social media management, among other services. We take the time to understand our
@@ -86,7 +86,7 @@ const Homepage = () => {
 					</h2>
 					<Image src={workProcessSm} alt="" className="w-full mt-8" />
 					<div className="mt-[2.5rem] space-y-8">
-						{workProcess.map(({ id, title, description }) => (
+						{workProcess.map(({ id, title, description, alt }) => (
 							<Card2
 								key={id}
 								numberClass="text-primary500 font-bold text-xl normal:text-[2rem] mb-2"
@@ -95,6 +95,7 @@ const Homepage = () => {
 								number={id}
 								title={title}
 								description={description}
+								alt={title}
 							/>
 						))}
 					</div>
@@ -106,7 +107,7 @@ const Homepage = () => {
 						Why Choose Us
 					</h2>
 					<div className="mt-8 space-y-[2.5rem]">
-						{whyUs.map(({ id, title, description, containerClass, image, alt }) => (
+						{whyUs.map(({ id, title, description, image, alt }) => (
 							<Card2
 								key={id}
 								containerClass="text-center"
@@ -115,6 +116,7 @@ const Homepage = () => {
 								title={title}
 								description={description}
 								image={image}
+								alt={alt}
 							/>
 						))}
 					</div>
@@ -130,12 +132,12 @@ const Homepage = () => {
 					</p>
 					<div className="grid grid-cols-2 gap-y-8 gap-x-4 mt-8">
 						{partners.map(({ id, image, title, alt }) => (
-							<Partners key={id} image={image} title={title} alt={alt} />
+							<Partners key={id} image={image} title={title} alt={title} />
 						))}
 					</div>
 				</div>
 			</section>
-			<section className="py-[2.5rem]">
+			<section className="py-[2.5rem] overflow-x-hidden">
 				<div className="">
 					<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900 text-center">
 						What Our Clients Say About Us

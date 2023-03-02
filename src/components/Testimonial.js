@@ -7,15 +7,15 @@ import { firstRow, secondRow } from "data/testimonial";
 
 const Testimonial = ({ image, alt, comment }) => {
 	return (
-		<div className="flex flex-col gap-6">
-			<Marquee gradient={false} speed={80}>
-				<motion.div className="flex gap-6">
+		<div className="flex flex-col gap-5 w-[200%]">
+			<Marquee gradient={false} direction="right" speed={90}>
+				<motion.div className="flex gap-4">
 					{firstRow.map(({ image, id, title, review, subtitle }) => (
 						<div
 							key={id}
-							className=" flex w-[610px] gap-4 items-center border-primary500 rounded-full border pr-[3.5rem] ml-6"
+							className=" flex w-[600px] gap-6 items-center border-primary500 rounded-full border pr-[3.5rem] first:ml-6"
 						>
-							<Image src={image} alt={alt} className="w-full" />
+							<Image src={image} alt={title} className="w-full" />
 							<div className="flex flex-col gap-3">
 								<q className="text-black900 text-[13px]">{review}</q>
 								<div className="">
@@ -28,13 +28,13 @@ const Testimonial = ({ image, alt, comment }) => {
 				</motion.div>
 			</Marquee>
 			<Marquee gradient={false} speed={80} direction="right" pauseOnHover={false}>
-				<motion.div className="flex gap-6 translate-x-[-5rem] overflow-x-scroll">
+				<motion.div className="flex gap-5 translate-x-[-5rem]">
 					{secondRow.map(({ image, id, title, review, subtitle }) => (
 						<div
 							key={id}
-							className=" flex w-[550px] gap-4 items-center border-primary500 rounded-full border pr-[3.5rem] ml-6"
+							className=" flex w-[550px] gap-6 items-center border-primary500 rounded-full border pr-[3.5rem] first:ml-6"
 						>
-							<Image src={image} alt={alt} className="w-full" />
+							<Image src={image} alt={title} className="w-full" />
 							<div className="flex flex-col gap-3">
 								<q className="text-black900 text-[13px]">{review}</q>
 								<div className="">

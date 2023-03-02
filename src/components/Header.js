@@ -122,33 +122,33 @@ const Header = ({ className }) => {
 					className="bg-primary50 absolute top-0 left-0 right-0 w-full h-[53vh] pt-9 medium:w-[60%] medium:ml-auto"
 				>
 					<ul className="flex flex-col items-center gap-8 text-center justify-center h-full">
-						<l1 className="">
+						<li className="">
 							<Link className={`${pathname === "/" ? "text-primary500 font-bold" : ""}`} href="/">
 								Home
 							</Link>
-						</l1>
-						<l1 className="">
+						</li>
+						<li className="">
 							<Link className={`${pathname === "/about" ? "text-primary500 font-bold" : ""}`} href="/about">
 								About Us
 							</Link>
-						</l1>
-						<l1 className="">
+						</li>
+						<li className="">
 							<Link className={`${pathname === "/services" ? "text-primary500 font-bold" : ""}`} href="/services">
 								Our Services
 							</Link>
-						</l1>
-						<l1 className="">
+						</li>
+						<li className="">
 							<Link className={`${pathname === "/contact-us" ? "text-primary500 font-bold" : ""}`} href="/contact-us">
 								Contact Us
 							</Link>
-						</l1>
-						<l1 className="">
+						</li>
+						<li className="">
 							<MyLink
 								value="Start a Project"
 								classes="text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full"
 								dest="/contact-us"
 							/>
-						</l1>
+						</li>
 					</ul>
 				</motion.nav>
 			</div>

@@ -16,7 +16,7 @@ const Footer = ({ className }) => {
 			<div className="w-[90%] mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:flex lg:flex-wrap justify-between lg:gap-4 lg:w-[80%]">
 				<div className="space-y-6 lg:w-[33%] xl:w-[23%]">
 					<Image src={footerLogo} className="" alt="footer logo" />
-					<p className="xs:text-xs small:text-sm xs:w-[95%] small:w-[65%] font-bold sm:w-[75%] sm:text-base lg:w-[100%]">
+					<p className="xs:text-xs small:text-sm xs:w-[95%] small:w-[65%] font-bold sm:w-[75%] sm:text-base md:w-[90%] lg:w-[100%]">
 						We're a team of young, professional and creative experts. Our goal is to deliver top-quality work on time
 						and within budget, while providing exceptional customer service.
 					</p>

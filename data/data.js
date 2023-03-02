@@ -71,6 +71,7 @@ export const whyUs = [
 	{
 		id: 1,
 		image: people,
+		alt: "people",
 		title: "We Prioritize Your  Success",
 		description:
 			"The first point of contact is for inquiries and technical specifications. At this stage, we learn about your project and how we can assist you in achieving your goals.",
@@ -78,6 +79,7 @@ export const whyUs = [
 	{
 		id: 2,
 		image: folder,
+		alt: "folder",
 		title: "Every Project is User-Centered",
 		description:
 			"Following the completion of all inquiries, the next step is to hold a virtual meeting to further plan the project.",
@@ -85,6 +87,7 @@ export const whyUs = [
 	{
 		id: 3,
 		image: calendar,
+		alt: "calendar",
 		title: "We Deliver Right On Time",
 		description: "At this point, we will send all project-related documents as well as an invoice for payment.",
 	},

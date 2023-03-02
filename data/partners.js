@@ -1,6 +1,6 @@
 import google from "../public/assets/images/google.svg";
 import apple from "../public/assets/images/apple.svg";
-import paystack from "../public/assets/images/paystack.png";
+import paystack from "../public/assets/images/paystack.svg";
 import adobe from "../public/assets/images/adobe.svg";
 import figma from "../public/assets/images/figma.svg";
 import flutterwave from "../public/assets/images/flutterwave.svg";

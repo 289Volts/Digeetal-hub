@@ -1,6 +1,5 @@
-import { useApp } from "@/context/appContext";
 import { useRouter } from "next/router";
-import React, { Fragment, useEffect, useState, useLayoutEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 
