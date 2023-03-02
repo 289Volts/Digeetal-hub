@@ -3,7 +3,7 @@ import React from "react";
 import MyLink from "./MyLink";
 import heroImgMobile from "../../public/assets/images/hero-img-mobile.svg";
 import whoWeAre from "../../public/assets/images/who-we-are.svg";
-import fair from "../../public/assets/images/fair.png";
+import fair from "../../public/assets/images/fair.svg";
 import workProcessSm from "../../public/assets/images/work-process-mobile.svg";
 import Card from "./Card";
 import Card2 from "./Card2";
@@ -17,7 +17,7 @@ const Homepage = () => {
 		<div className="">
 			<section className="pt-6 pb-[2.5rem]">
 				<div className="w-[90%] mx-auto">
-					<Image src={fair} alt="" className="" />
+					<Image src={fair} alt="" className="w-full" />
 					<div className="">
 						<div className="text-center space-y-2 mt-6">
 							<h1 className="font-bold text-black900 text-lg small:text-[1.25rem] leading-[1.26] normal:text-[1.7rem] md:text-[3rem]">
@@ -132,7 +132,7 @@ const Homepage = () => {
 					</div>
 				</div>
 			</section>
-			<section className="py-[2.5rem] h-[80dvh] overflow-x-hidden">
+			<section className="py-[2.5rem]">
 				<div className="">
 					<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900 text-center">
 						What Our Clients Say About Us
