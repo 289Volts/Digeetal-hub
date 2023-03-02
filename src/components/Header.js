@@ -134,7 +134,7 @@ const Header = ({ className }) => {
 						</l1>
 						<l1 className="">
 							<Link className={`${pathname === "/services" ? "text-primary500 font-bold" : ""}`} href="/services">
-								FAQs
+								Our Services
 							</Link>
 						</l1>
 						<l1 className="">

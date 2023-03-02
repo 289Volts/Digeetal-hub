@@ -3,6 +3,7 @@ import dami from "../public/assets/images/dami.svg";
 import juliet from "../public/assets/images/juliet.svg";
 import boma from "../public/assets/images/boma.svg";
 import mike from "../public/assets/images/mike.svg";
+import woman from "../public/assets/images/woman.svg";
 
 export const firstRow = [
 	{
@@ -19,7 +20,7 @@ export const firstRow = [
 			"We have been working with Digeetal Hub for several months now, and the results have been outstanding. They are responsive, communicative, and truly understand our brand. We highly recommend them to anyone looking to boost their social media presence.",
 		title: "Dr Dammie",
 		subtitle: "Founder, Dr Dammie Lifestyle Store",
-		image: boma,
+		image: dami,
 	},
 	{
 		id: 3,
@@ -38,7 +39,7 @@ export const secondRow = [
 			"I am blown away by the level of creativity and expertise Digeetal Hub bring to the table. They were able to design my product stickers and it looks great. I couldn't be happier with their work.",
 		title: "Juliet Awobite",
 		subtitle: "CEO, Jaysglam Skin",
-		image: boma,
+		image: juliet,
 	},
 	{
 		id: 5,
@@ -46,6 +47,14 @@ export const secondRow = [
 			"I am blown away by the level of creativity and expertise Digeetal Hub bring to the table. They were able to design my product stickers and it looks great. I couldn't be happier with their work.",
 		title: "Mike",
 		subtitle: "CEO, Jaysglam Skin",
-		image: jamari,
+		image: juliet,
+	},
+	{
+		id: 6,
+		review:
+			"I am blown away by the level of creativity and expertise Digeetal Hub bring to the table. They were able to design my product stickers and it looks great. I couldn't be happier with their work.",
+		title: "Mike",
+		subtitle: "CEO, Jaysglam Skin",
+		image: woman,
 	},
 ];

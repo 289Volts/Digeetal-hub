@@ -39,7 +39,7 @@ const Homepage = () => {
 			</section>
 			<section className="bg-primary50 py-[2.5rem]">
 				<div className="w-[90%] mx-auto">
-					<Image src={whoWeAre} alt="" />
+					<Image src={whoWeAre} alt="" className="w-full" />
 					<div className="space-y-2 mt-8">
 						<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900">
 							Who We Are
