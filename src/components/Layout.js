@@ -15,7 +15,6 @@ const Layout = ({ children, className }) => {
 		}
 	}, [pathname]);
 
-	console.log(isHome);
 	// const allowedPath = `${pathname} === "/contact-us" || ${pathname} === "/about" || ${pathname} === "/services" || ${pathname} === "/homepage"`;
 	// const homePath = `${pathname} === "/"`;
 	return (

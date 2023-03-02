@@ -6,11 +6,11 @@ const Card = ({ classes, title, description }) => {
 	return (
 		<m.div
 			initial={{ opacity: 0, x: -100 }}
-			whileInView={{ opacity: 1,  x: 0}}
+			whileInView={{ opacity: 1, x: 0 }}
 			viewport={{ once: true, threshold: 5 }}
 			whileHover={{ scale: 1.05 }}
 			whileTap={{ scale: 0.95 }}
-			transition={{ duration: 0.5 }}
+			transition={{ duration: 0.8 }}
 			className="shadow-cardShadow bg-white text-center py-[2.1875rem] px-5 rounded-[20px]"
 		>
 			<h3 className="text-black500 text-xl font-bold mb-3">{title}</h3>
