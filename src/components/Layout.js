@@ -1,18 +1,28 @@
 import { useApp } from "@/context/appContext";
 import { useRouter } from "next/router";
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState, useLayoutEffect } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 
 const Layout = ({ children, className }) => {
 	const { pathname } = useRouter();
-	const allowedPath = `${pathname} === "/contact-us" || ${pathname} === "/about" || ${pathname} === "/services" || ${pathname} === "/homepage"`;
-const homePath = `${pathname} === "/"`
+
+	const [isHome, setIsHome] = useState(true);
+
+	useEffect(() => {
+		if (pathname != "/") {
+			setIsHome(!isHome);
+		}
+	}, [pathname]);
+
+	console.log(isHome);
+	// const allowedPath = `${pathname} === "/contact-us" || ${pathname} === "/about" || ${pathname} === "/services" || ${pathname} === "/homepage"`;
+	// const homePath = `${pathname} === "/"`;
 	return (
 		<Fragment>
-			{allowedPath && !homePath ? <Header className={className} /> : null}
+			{!isHome ? <Header className={className} /> : null}
 			<main className={`${className}`}>{children}</main>
-			{allowedPath && !homePath ? <Footer className={className} /> : null}
+			{!isHome ? <Footer className={className} /> : null}
 		</Fragment>
 	);
 };

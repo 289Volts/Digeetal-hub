@@ -10,10 +10,11 @@ import Card2 from "./Card2";
 import { services, whyUs, workProcess } from "../../data/data";
 import { partners } from "../../data/partners";
 import Partners from "./Partners";
+import Testimonial from "./Testimonial";
 
 const Homepage = () => {
 	return (
-		<div className=" overflow-hidden">
+		<div className="">
 			<section className="pt-6 pb-[2.5rem]">
 				<div className="w-[90%] mx-auto">
 					<Image src={fair} alt="" className="" />
@@ -124,10 +125,20 @@ const Homepage = () => {
 					<p className="text-black500 text-xs small:text-sm normal:text-base font-bold mt-2">
 						We Collaborate with the world's Top Tech Companies
 					</p>
-					<div className="grid grid-cols-2 gap-y-8 gap-x-4">
+					<div className="grid grid-cols-2 gap-y-8 gap-x-4 mt-8">
 						{partners.map(({ id, image, title, alt }) => (
 							<Partners key={id} image={image} title={title} alt={alt} />
 						))}
+					</div>
+				</div>
+			</section>
+			<section className="py-[2.5rem] h-[80dvh] overflow-x-hidden">
+				<div className="">
+					<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900 text-center">
+						What Our Clients Say About Us
+					</h2>
+					<div className="mt-8">
+						<Testimonial />
 					</div>
 				</div>
 			</section>
