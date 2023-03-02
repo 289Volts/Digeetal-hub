@@ -17,11 +17,11 @@ const Homepage = () => {
 	return (
 		<div className="">
 			<section className="pt-6 pb-[2.5rem]">
-				<div className="w-[90%] mx-auto md:flex flex-row-reverse">
-					<Image src={fair} alt="" className="w-full" />
+				<div className="w-[90%] mx-auto md:flex flex-row-reverse gap-[3rem] items-center justify-between">
+					<Image src={fair} alt="" className="w-full md:w-[40%]" />
 					<div className="">
-						<div className="text-center mt-6">
-							<h1 className="font-bold text-black900 text-lg small:text-[1.25rem] leading-[1.26] normal:text-[1.7rem] md:text-[3rem]">
+						<div className="text-center mt-6 md:text-left md:mt-0">
+							<h1 className="font-bold text-black900 text-lg small:text-[1.25rem] leading-[1.26] normal:text-[1.7rem] md:text-[2rem] lg:text-[3rem]">
 								Elevate Your Business with Custom Web Design & Development Solutions
 							</h1>
 							<p className="text-xs small:text-sm normal:text-base text-black500 mt-2">
@@ -31,7 +31,7 @@ const Homepage = () => {
 							<div className="mt-4">
 								<MyLink
 									value="Learn More"
-									classes="text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full w-[fit-content] mx-auto"
+									classes="text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full w-[fit-content] mx-auto md:mx-0"
 								/>
 							</div>
 						</div>
@@ -39,15 +39,13 @@ const Homepage = () => {
 				</div>
 			</section>
 			<section className="bg-primary50 py-[2.5rem]">
-				<div className="w-[90%] mx-auto">
-					{/* <BlurSkeleton src={whoWeAre} alt="" /> */}
-					<Image src={whoWeAre} alt="" className="w-full" />
-					{/* <Image src="/assets/images/who-we-are.svg" width={300} height={300} alt="" className="w-full" /> */}
-					<div className="space-y-2 mt-8">
-						<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900">
+				<div className="w-[90%] mx-auto md:flex justify-between gap-[3rem]">
+					<Image src={whoWeAre} alt="" className="w-full md:w-[40%] " />
+					<div className="mt-8">
+						<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[2.5rem] lg:text-[3rem] text-black900">
 							Who We Are
 						</h2>
-						<p className="text-black900 text-xs small:text-sm leading-[1.4] normal:text-base">
+						<p className="text-black900 text-xs small:text-sm leading-[1.4] normal:text-base mt-2">
 							Welcome to Digeetal Hub, where we specialize in web design and development solutions to help businesses
 							stand out online. Our team of experts offers custom web design, e-commerce solutions, responsive design,
 							and SEO optimization, social media management, among other services. We take the time to understand our
@@ -55,17 +53,17 @@ const Homepage = () => {
 							is to deliver top-quality work on time and within budget, while providing exceptional customer service.
 							Let us help you achieve your business goals today.
 						</p>
+						<MyLink
+							value="See More"
+							classes="text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 w-[fit-content] mt-4"
+						/>
 					</div>
-					<MyLink
-						value="See More"
-						classes="text-whiteText bg-primary500 font-semibold rounded-[10px] block py-3 px-5 h-full w-[fit-content] mt-4"
-					/>
 				</div>
 			</section>
 			<section className="py-[2.5rem] overflow-hidden">
 				<div className="w-[90%] mx-auto text-center">
 					<div className="">
-						<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[3rem] text-black900">
+						<h2 className="font-bold text-lg small:text-[1.25rem] normal:text-[1.5rem] md:text-[2rem] lg:text-[3rem] text-black900">
 							Explore Our Premium Digital Services
 						</h2>
 						<p className="text-black500 text-xs small:text-sm normal:text-base font-bold mt-2">
