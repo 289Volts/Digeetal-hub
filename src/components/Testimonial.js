@@ -8,7 +8,7 @@ import { firstRow, secondRow } from "data/testimonial";
 const Testimonial = ({ image, alt, comment }) => {
 	return (
 		<div className="flex flex-col gap-5 w-[200%]">
-			<Marquee gradient={false} direction="right" speed={90}>
+			<Marquee gradient={false} direction="right" speed={80}  pauseOnHover={true}>
 				<motion.div className="flex gap-4">
 					{firstRow.map(({ image, id, title, review, subtitle }) => (
 						<div
@@ -27,7 +27,7 @@ const Testimonial = ({ image, alt, comment }) => {
 					))}
 				</motion.div>
 			</Marquee>
-			<Marquee gradient={false} speed={80} direction="right" pauseOnHover={false}>
+			<Marquee gradient={false} speed={70} direction="right" pauseOnHover={true}>
 				<motion.div className="flex gap-5 translate-x-[-5rem]">
 					{secondRow.map(({ image, id, title, review, subtitle }) => (
 						<div
