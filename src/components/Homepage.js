@@ -84,7 +84,7 @@ const Homepage = () => {
 					</h2>
 					<Image src={workProcessSm} alt="" className="w-full mt-8" />
 					<div className="mt-[2.5rem] space-y-8">
-						{workProcess.map(({ id, title, description, alt }) => (
+						{workProcess.map(({ id, title, description }) => (
 							<Card2
 								key={id}
 								numberClass="text-primary500 font-bold text-xl normal:text-[2rem] mb-2"
